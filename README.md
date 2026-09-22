@@ -9,6 +9,7 @@ I have built a complete, end-to-end retail analytics suite, transitioning from t
 
 - **Demand Sensing & Probabilistic Forecasting:** A Temporal Fusion Transformer (TFT) architecture utilizing PyTorch Forecasting and Quantile Loss (P10/P50/P90) for dynamic retail safety stock optimization.
 - **Automated Catalog Classifier:** A fine-tuned DistilBERT NLP model hosted via Hugging Face that autonomously maps raw vendor text into internal retail categories.
+- **Two-Tower Neural Recommendation Engine** A custom PyTorch architecture utilizing in-batch negative sampling and sub-millisecond FAISS vector search for real-time candidate retrieval.
 - [Retail Agentic AI: Text-to-SQL Assistant](https://github.com/findsamirks-commits/retail-sql-agent) *:* A localized LangChain and Gemini 2.5 Flash agent that bypasses manual dashboarding by autonomously translating plain English operational queries into executed SQL against a simulated MySQL environment.
 - [Yield Optimization Engine](https://github.com/findsamirks-commits/retail-yield-optimization) *:* A dynamic mathematical API calculating price elasticity to minimize spoilage and maximize gross margin for highly perishable inventory.
 - [Customer Segmentation API](https://github.com/findsamirks-commits/retail-customer-segmentation-api) *:* An unsupervised machine learning backend utilizing RFM clustering to group shoppers into actionable behavioral segments.
@@ -22,7 +23,7 @@ I have built a complete, end-to-end retail analytics suite, transitioning from t
 
 *🛠️ Technical Stack*
 - *Languages & Frameworks:* Python, SQL, FastAPI, LangChain, LangGraph, PyTorch
-- *AI & Machine Learning:* Google Gemini, Hugging Face, Transformers, PyTorch Forecasting, Random Forest, RFM Clustering, Natural Language Processing, Prompt Engineering
+- *AI & Machine Learning:* Google Gemini, Hugging Face, Transformers, PyTorch Forecasting, Random Forest, RFM Clustering, Natural Language Processing, Prompt Engineering, FAISS
 - *Data & Analytics:* MySQL, SQLite, Pandas, Seaborn, Matplotlib, Power BI
 
 📫 *Connect with me:* [LinkedIn](https://linkedin.com/in/samirsandhwar) | [findsamirks@gmail.com](mailto:findsamirks@gmail.com)
