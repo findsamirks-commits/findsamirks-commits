@@ -10,11 +10,14 @@ I have built a complete, end-to-end retail analytics suite, transitioning from t
 - **Demand Sensing & Probabilistic Forecasting:** A Temporal Fusion Transformer (TFT) architecture utilizing PyTorch Forecasting and Quantile Loss (P10/P50/P90) for dynamic retail safety stock optimization.
 - **Automated Catalog Classifier:** A fine-tuned DistilBERT NLP model hosted via Hugging Face that autonomously maps raw vendor text into internal retail categories.
 - **Two-Tower Neural Recommendation Engine** A custom PyTorch architecture utilizing in-batch negative sampling and sub-millisecond FAISS vector search for real-time candidate retrieval.
+- [Autonomous Multi-Agent Procurement Squad](https://github.com/findsamirks-commits/Multi-Agent-Supply-Chain-Orchestration) *:* A decentralized LangGraph architecture utilizing Gemini 2.5 Flash, native DuckDuckGo web scraping, and SQLite to autonomously monitor inventory thresholds, evaluate real-time competitor pricing, and draft data-backed vendor negotiation communications.
+- [Retail Document Intelligence (RAG)](https://github.com/findsamirks-commits/Retail-RAG-Assistant) *:* A strict Retrieval-Augmented Generation application using LangChain, ChromaDB, and Gemini 2.5 Flash to securely query and cite internal retail PDF reports and SOPs without hallucination.
 - [Retail Agentic AI: Text-to-SQL Assistant](https://github.com/findsamirks-commits/retail-sql-agent) *:* A localized LangChain and Gemini 2.5 Flash agent that bypasses manual dashboarding by autonomously translating plain English operational queries into executed SQL against a simulated MySQL environment.
 - [Yield Optimization Engine](https://github.com/findsamirks-commits/retail-yield-optimization) *:* A dynamic mathematical API calculating price elasticity to minimize spoilage and maximize gross margin for highly perishable inventory.
 - [Customer Segmentation API](https://github.com/findsamirks-commits/retail-customer-segmentation-api) *:* An unsupervised machine learning backend utilizing RFM clustering to group shoppers into actionable behavioral segments.
 - [Demand Forecasting API](https://github.com/findsamirks-commits/retail-demand-forecasting-api) *:* A production-ready FastAPI service leveraging Random Forest Regression for inventory optimization.
 - [Review Sentiment & Triage](https://github.com/findsamirks-commits/retail-review-sentiment-classifier-api) *:* An NLP microservice that classifies customer feedback and automatically routes operational incident tickets.
+- [Multimodal SKU Classifier & Enrichment Pipeline](https://www.google.com/search?q=https://github.com/findsamirks-commits/Multimodal-SKU-Classifier): A PyTorch late-fusion architecture combining a pre-trained ResNet-18 vision backbone with an nn.EmbeddingBag text encoder to classify e-commerce catalog items from joint RGB imagery and product titles, featuring automated modality ablation benchmarking. Model weights hosted on [Hugging Face](https://www.google.com/search?q=https://huggingface.co/findsamirks/Retail-Multimodal-Classifier).
 
 *🌱 Additional Projects*
 - [SBI Financial Database](https://github.com/findsamirks-commits/sbi-financial-database) *:* A comprehensive SQL architecture featuring optimized views and an integrated Power BI dashboard for enterprise reporting.
@@ -22,7 +25,7 @@ I have built a complete, end-to-end retail analytics suite, transitioning from t
 - [Ames Housing ML Pipeline](https://github.com/findsamirks-commits/ames-housing-ml) *:* An end-to-end machine learning pipeline predicting real estate prices using demographic and geographical feature engineering.
 
 *🛠️ Technical Stack*
-- *Languages & Frameworks:* Python, SQL, FastAPI, LangChain, LangGraph, PyTorch
+- *Languages & Frameworks:* Python, SQL, FastAPI, LangChain, **LangGraph**, PyTorch
 - *AI & Machine Learning:* Google Gemini, Hugging Face, Transformers, PyTorch Forecasting, Random Forest, RFM Clustering, Natural Language Processing, Prompt Engineering, FAISS
 - *Data & Analytics:* MySQL, SQLite, Pandas, Seaborn, Matplotlib, Power BI
 
