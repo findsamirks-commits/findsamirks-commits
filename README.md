@@ -30,10 +30,13 @@ A production-ready retail intelligence suite transitioning from traditional fore
 
 ---
 
-### 🛠️ Technical Stack
-- **Languages & Frameworks:** Python, SQL, FastAPI, Flask, LangChain, **LangGraph**, PyTorch, PyTorch Lightning, Pydantic, Groq
-- **AI & Machine Learning:** Multi-Agent Swarms, Self-Attentive Sequential Recs (SASRec), Google Gemini, Hugging Face, Transformers, PyTorch Forecasting, ResNet, Two-Tower Networks, FAISS, ChromaDB, Random Forest, XGBoost, RFM Clustering, Natural Language Processing, Prompt Engineering
-- **Data & Analytics:** MySQL, SQLite, SQLAlchemy, Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib, Tabulate, Power BI
+### 🛠️ Technical Architecture & Stack
+- **Agentic AI & Orchestration:** LangGraph (Cyclic StateGraphs, Dynamic Routing), LangChain, Multi-Agent Swarms, Tool Calling & Function Execution, Structured Output Schemas (Pydantic), Groq (`openai/gpt-oss-120b`), Google Gemini
+- **Deep Learning & Recommender Systems:** PyTorch, PyTorch Lightning, Self-Attentive Sequential Recommendations (SASRec), Two-Tower Candidate Retrieval, Multimodal Vision-Language Late Fusion (ResNet + Text Encoders), Transformers, Hugging Face Hub
+- **Time Series & Predictive Modeling:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss (P10/P50/P90), PyTorch Forecasting, XGBoost, Random Forest, Scikit-Learn
+- **Information Retrieval & Vector Search:** FAISS (Sub-millisecond Vector Similarity), ChromaDB, Retrieval-Augmented Generation (RAG), Semantic Embedding Search
+- **Data Engineering & Analytics:** Python, SQL, SQLAlchemy, MySQL, SQLite, Pandas, NumPy, Data Pipeline Optimization, Power BI
+- **API & Systems Design:** FastAPI, Flask, RESTful Microservices, Automated Workflow Governance & P&L Guardrails
 
 ---
 
