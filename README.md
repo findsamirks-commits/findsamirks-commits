@@ -9,8 +9,11 @@ I am a Senior Retail Professional and Category Head with over 24 years of indust
 ### 🚀 Featured Retail AI & Supply Chain Architectures
 A production-ready retail intelligence suite transitioning from traditional forecasting to multi-agent autonomous systems:
 
+- **[Multi-Agent Dynamic Pricing Swarm](https://github.com/findsamirks-commits/Multi-Agent-Dynamic-Pricing-Swarm):** A collaborative multi-agent dynamic pricing swarm built with LangChain, Pydantic, and Groq's high-throughput `openai/gpt-oss-120b` endpoint. Orchestrates specialized Competitor, Price Elasticity (%ΔQ = ε × %ΔP), Margin Floor / MRP Ceiling Governance, and Strategic Category Decision agents to output executive before-and-after P&L scorecards.
 - **[Autonomous Agentic Inventory Optimization](https://github.com/findsamirks-commits/Agentic-Inventory-Optimizer):** A closed-loop AI supply chain agent built with LangGraph and Pydantic that autonomously monitors SKU sales velocity, calculates Days of Cover, factors in vendor Minimum Order Quantities (MOQs), and dynamically generates structured JSON Purchase Orders.
+- **[Self-Attentive Sequential Recommendation (SASRec)](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec):** A PyTorch implementation of the SASRec sequential recommendation architecture featuring item embeddings, learnable positional encodings, causal self-attention Transformer blocks with left-padded masking, and top-K ranking metrics (Hit Rate@10, NDCG@10).
 - **[Autonomous Multi-Agent Procurement Squad](https://github.com/findsamirks-commits/Multi-Agent-Supply-Chain-Orchestration):** A decentralized LangGraph architecture utilizing Gemini 2.5 Flash, native DuckDuckGo web scraping, and SQLite to autonomously monitor inventory thresholds, evaluate real-time competitor pricing, and draft data-backed vendor negotiation communications.
+- **[Retail Analytics Text-to-SQL Copilot](https://github.com/findsamirks-commits/Retail-SQL-Copilot):** An autonomous analytics copilot built with LangChain, SQLAlchemy, and OpenAI/Groq function calling that translates natural language merchandising and operational performance queries into validated, executed SQL queries against multi-table retail databases.
 - **[Multimodal SKU Classifier & Enrichment Pipeline](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier):** A PyTorch late-fusion architecture combining a pre-trained ResNet-18 vision backbone with an nn.EmbeddingBag text encoder to classify e-commerce catalog items from joint RGB imagery and product titles, featuring automated modality ablation benchmarking. Model weights hosted on [Hugging Face](https://huggingface.co/findsamirks/Retail-Multimodal-Classifier).
 - **[Two-Tower Neural Recommendation Engine](https://github.com/findsamirks-commits/retail-twotower-recsys):** A custom PyTorch architecture utilizing dual neural networks, in-batch negative sampling, and sub-millisecond FAISS vector search for real-time candidate retrieval and personalized product recommendations.
 - **[Demand Sensing & Probabilistic Forecasting (TFT)](https://github.com/findsamirks-commits/retail-demand-tft):** A Temporal Fusion Transformer (TFT) architecture utilizing PyTorch Forecasting and Quantile Loss (P10/P50/P90) with an interactive dashboard for dynamic retail safety stock optimization.
@@ -35,9 +38,9 @@ A production-ready retail intelligence suite transitioning from traditional fore
 ---
 
 ### 🛠️ Technical Stack
-- **Languages & Frameworks:** Python, SQL, FastAPI, Flask, LangChain, **LangGraph**, PyTorch, PyTorch Lightning
-- **AI & Machine Learning:** Google Gemini, Hugging Face, Transformers, PyTorch Forecasting, ResNet, Two-Tower Networks, FAISS, ChromaDB, Random Forest, XGBoost, RFM Clustering, Natural Language Processing, Prompt Engineering
-- **Data & Analytics:** MySQL, SQLite, Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib, Power BI
+- **Languages & Frameworks:** Python, SQL, FastAPI, Flask, LangChain, **LangGraph**, PyTorch, PyTorch Lightning, Pydantic, Groq
+- **AI & Machine Learning:** Multi-Agent Swarms, Self-Attentive Sequential Recs (SASRec), Google Gemini, Hugging Face, Transformers, PyTorch Forecasting, ResNet, Two-Tower Networks, FAISS, ChromaDB, Random Forest, XGBoost, RFM Clustering, Natural Language Processing, Prompt Engineering
+- **Data & Analytics:** MySQL, SQLite, SQLAlchemy, Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib, Tabulate, Power BI
 
 ---
 
