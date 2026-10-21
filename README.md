@@ -30,13 +30,6 @@ A production-ready retail intelligence suite transitioning from traditional fore
 
 ---
 
-### 🌱 Additional Projects
-- **[SBI Financial Database](https://github.com/findsamirks-commits/sbi-financial-database):** A comprehensive SQL architecture featuring optimized views and an integrated Power BI dashboard for enterprise reporting.
-- **[Spendly Expense Tracker](https://github.com/findsamirks-commits/spendly-expense-tracker):** A lightweight, full-stack personal finance Flask web application built to log daily expenses and visualize spending patterns.
-- **[Ames Housing ML Pipeline](https://github.com/findsamirks-commits/ames-housing-ml):** An end-to-end machine learning pipeline predicting real estate prices using demographic and geographical feature engineering.
-
----
-
 ### 🛠️ Technical Stack
 - **Languages & Frameworks:** Python, SQL, FastAPI, Flask, LangChain, **LangGraph**, PyTorch, PyTorch Lightning, Pydantic, Groq
 - **AI & Machine Learning:** Multi-Agent Swarms, Self-Attentive Sequential Recs (SASRec), Google Gemini, Hugging Face, Transformers, PyTorch Forecasting, ResNet, Two-Tower Networks, FAISS, ChromaDB, Random Forest, XGBoost, RFM Clustering, Natural Language Processing, Prompt Engineering
