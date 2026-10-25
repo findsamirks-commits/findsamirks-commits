@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Samir Sandhwar
 
-**Senior Retail Professional & Category Head | Agentic AI & Data Science Engineer**  
+**Senior Retail Professional & Merchandising Head | Agentic AI & Data Science Engineer| Business Head**  
 *Bridging 24+ years of high-volume retail P&L leadership with production autonomous multi-agent AI architectures.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-samirsandhwar-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/samirsandhwar)
