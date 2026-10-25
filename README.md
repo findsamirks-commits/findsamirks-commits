@@ -35,6 +35,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 | **[Sequential Recommender (SASRec)](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec)** | PyTorch, Transformers, Causal Self-Attention | Captures dynamic user interaction trajectories over time using left-padded causal Transformer self-attention blocks to predict next-basket SKU additions (evaluated on HR@10, NDCG@10). |
 | **[Retail-SQL-Copilot](https://github.com/findsamirks-commits/Retail-SQL-Copilot)** | LangChain, SQLAlchemy, Tool-Calling | Autonomous enterprise text-to-SQL copilot with automated schema inspection, query safety guardrails, and natural language executive BI synthesis. |
 | **[Multimodal SKU Classifier](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier)** | PyTorch, ResNet-18, Hugging Face Hub | Late-fusion neural architecture combining vision representations with text encoders (`nn.EmbeddingBag`) for automated catalog categorization. Model weights published on Hugging Face. |
+| **[Last-Mile Delivery Batching Agent](https://github.com/findsamirks-commits/Last-Mile-Delivery-Batching-Agent)** | LangChain, NetworkX, Groq (gpt-oss-120b) | Ingests localized order spikes and utilizes spatial graph logic to autonomously cluster quick-commerce deliveries, adhering to strict rider weight capacities (15kg) and time-to-deliver SLAs. |
 
 ---
 
