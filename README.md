@@ -6,6 +6,8 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-samirsandhwar-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/samirsandhwar)
 [![Email](https://img.shields.io/badge/Email-findsamirks%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:findsamirks@gmail.com)
 [![GitHub List](https://img.shields.io/badge/Curated_List-Retail_AI_Architectures-blue?style=flat&logo=github)](https://github.com/stars/findsamirks-commits/lists/retail-ai-architectures)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-findsamirks-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/findsamirks)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demos-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://share.streamlit.io)
 
 ---
 
@@ -34,7 +36,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 | **[VoC Defect Routing Agent](https://github.com/findsamirks-commits/VoC-Defect-Routing-Agent)** | LangChain, Groq (`openai/gpt-oss-120b`), Pydantic | Autonomous quick-commerce QA triage: Extracts structured defect assessments from unstructured reviews, classifies failure modes (Temperature, Packaging, Missing Items, Spoilage), rates severity (1-5), and routes tickets to Dark Store Ops, Category Managers, or Supply Chain. |
 | **[Sequential Recommender (SASRec)](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec)** | PyTorch, Transformers, Causal Self-Attention | Captures dynamic user interaction trajectories over time using left-padded causal Transformer self-attention blocks to predict next-basket SKU additions (evaluated on HR@10, NDCG@10). |
 | **[Retail-SQL-Copilot](https://github.com/findsamirks-commits/Retail-SQL-Copilot)** | LangChain, SQLAlchemy, Tool-Calling | Autonomous enterprise text-to-SQL copilot with automated schema inspection, query safety guardrails, and natural language executive BI synthesis. |
-| **[Multimodal SKU Classifier](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier)** | PyTorch, ResNet-18, Hugging Face Hub | Late-fusion neural architecture combining vision representations with text encoders (`nn.EmbeddingBag`) for automated catalog categorization. Model weights published on Hugging Face. |
+| **[Multimodal SKU Classifier](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier)** | PyTorch, ResNet-18, Hugging Face Hub | Late-fusion neural architecture combining vision representations with text encoders (`nn.EmbeddingBag`) for automated catalog categorization. Model weights published on [Hugging Face](https://huggingface.co/findsamirks/Retail-Multimodal-Classifier). |
 | **[Last-Mile Delivery Batching Agent](https://github.com/findsamirks-commits/Last-Mile-Delivery-Batching-Agent)** | LangChain, NetworkX, Groq (gpt-oss-120b) | Ingests localized order spikes and utilizes spatial graph logic to autonomously cluster quick-commerce deliveries, adhering to strict rider weight capacities (15kg) and time-to-deliver SLAs. |
 
 ---
@@ -44,18 +46,18 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 <details>
 <summary><strong>🔍 Deep Learning, Recommenders & Predictive Forecasting (Click to Expand)</strong></summary>
 
-* **[Two-Tower Neural Recommendation Engine](https://github.com/findsamirks-commits/retail-twotower-recsys):** Custom dual-encoder neural network in PyTorch with in-batch negative sampling and sub-millisecond FAISS vector indexing for high-throughput candidate retrieval.
-* **[Demand Sensing & Probabilistic Forecasting (TFT)](https://github.com/findsamirks-commits/retail-demand-tft):** Temporal Fusion Transformer architecture using PyTorch Forecasting with Quantile Loss ($P_{10}/P_{50}/P_{90}$) and dynamic safety-stock optimization dashboards.
-* **[Retail Document Intelligence (RAG)](https://github.com/findsamirks-commits/Retail-Document-Intelligence-RAG):** Strict enterprise Retrieval-Augmented Generation system using LangChain, ChromaDB, and Gemini 2.5 Flash for grounded citation of standard operating procedures (SOPs) and retail policy documentation.
-* **[Autonomous Multi-Agent Procurement Squad](https://github.com/findsamirks-commits/Multi-Agent-Supply-Chain-Orchestration):** Decentralized LangGraph architecture combining real-time web scraping, inventory thresholds, and data-backed vendor negotiation drafting.
+* **[Two-Tower Neural Recommendation Engine](https://github.com/findsamirks-commits/retail-twotower-recsys):** Custom dual-encoder neural network in PyTorch with in-batch negative sampling and sub-millisecond FAISS vector indexing for high-throughput candidate retrieval. *(Live Interactive App on Streamlit)*
+* **[Demand Sensing & Probabilistic Forecasting (TFT)](https://github.com/findsamirks-commits/retail-demand-tft):** Temporal Fusion Transformer architecture using PyTorch Forecasting with Quantile Loss ($P_{10}/P_{50}/P_{90}$) and dynamic safety-stock optimization dashboards. *(Live Interactive App on Streamlit)*
+* **[Retail Document Intelligence (RAG)](https://github.com/findsamirks-commits/Retail-Document-Intelligence-RAG):** Strict enterprise Retrieval-Augmented Generation system using LangChain, ChromaDB, and Gemini 2.5 Flash for grounded citation of standard operating procedures (SOPs) and retail policy documentation. *(Live Interactive App on Streamlit)*
+* **[Autonomous Multi-Agent Procurement Squad](https://github.com/findsamirks-commits/Multi-Agent-Supply-Chain-Orchestration):** Decentralized LangGraph architecture combining real-time web scraping, inventory thresholds, and data-backed vendor negotiation drafting. *(Live Interactive App on Streamlit)*
 </details>
 
 <details>
 <summary><strong>⚙️ Commercial APIs, Classical ML Benchmarks & Utilities (Click to Expand)</strong></summary>
 
+* **[Competitor Pricing Intelligence Agent](https://github.com/findsamirks-commits/competitor-pricing-agent):** Web scraping and SKU matching agent for tracking rival retailer pricing and identifying margin-expansion opportunities. *(Live Interactive App on Streamlit)*
+* **[Automated Catalog Classifier](https://github.com/findsamirks-commits/retail-catalog-classifier):** DistilBERT NLP model fine-tuned for high-accuracy vendor item taxonomy classification. Model weights on [Hugging Face](https://huggingface.co/findsamirks/retail-catalog-classifier) *(Live Interactive App on Streamlit)*.
 * **[Yield Optimization Engine](https://github.com/findsamirks-commits/retail-yield-optimization):** Mathematical API evaluating elasticity and shelf-life dynamics to minimize spoilage and maximize realization in perishable grocery categories.
-* **[Competitor Pricing Intelligence Agent](https://github.com/findsamirks-commits/competitor-pricing-agent):** Web scraping and SKU matching agent for tracking rival retailer pricing and identifying margin-expansion opportunities.
-* **[Automated Catalog Classifier](https://github.com/findsamirks-commits/retail-catalog-classifier):** DistilBERT NLP model fine-tuned for high-accuracy vendor item taxonomy classification.
 * **[Retail ML vs. DL Architectures Benchmark](https://github.com/findsamirks-commits/Retail-ML-vs-DL-Architectures):** Head-to-head empirical study contrasting tabular gradient boosting (XGBoost) against deep tensor representations.
 * **[Customer Segmentation API](https://github.com/findsamirks-commits/retail-customer-segmentation-api):** Unsupervised RFM (Recency, Frequency, Monetary) clustering microservice generating actionable customer cohorts.
 * **[Review Sentiment & Triage API](https://github.com/findsamirks-commits/retail-review-sentiment-classifier-api):** NLP classification microservice for operational incident routing and customer sentiment analytics.
@@ -78,4 +80,6 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 
 * **LinkedIn:** [linkedin.com/in/samirsandhwar](https://www.linkedin.com/in/samirsandhwar)
 * **Email:** [findsamirks@gmail.com](mailto:findsamirks@gmail.com)
+* **Hugging Face Hub:** [huggingface.co/findsamirks](https://huggingface.co/findsamirks) (Model weights & inference checkpoints)
+* **Streamlit Demos:** [Streamlit Community Cloud](https://share.streamlit.io) (Interactive microservices & forecasting apps)
 * **Curated List:** [Retail AI Architectures Portfolio](https://github.com/stars/findsamirks-commits/lists/retail-ai-architectures)
