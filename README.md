@@ -30,7 +30,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 
 | System | Core Architecture & Stack | Business & Technical Impact |
 | :--- | :--- | :--- |
-| **[Autonomous A2A Vendor Negotiation Arena](https://github.com/findsamirks-commits/A2A-Vendor-Negotiation-Arena)** | FastAPI, LangGraph, Groq (`openai/gpt-oss-120b`) | Autonomous bilateral procurement bargaining state machine between a Retail Buyer (Milkbasket) and FMCG Supplier with multi-parameter trade-offs (price, volume, SLA) converging within a 6-turn limit. |
+| **[Autonomous A2A Vendor Negotiation Arena](https://github.com/findsamirks-commits/A2A-Vendor-Negotiation-Arena)** | Streamlit, FastAPI, LangGraph, Groq (`openai/gpt-oss-120b`) | Autonomous bilateral procurement bargaining state machine between a Retail Buyer (Milkbasket) and FMCG Supplier with multi-parameter trade-offs (price, volume, SLA) converging within a 6-turn limit. Features an interactive Streamlit arena UI for live simulation. |
 | **[Multi-Agent Dynamic Pricing Swarm](https://github.com/findsamirks-commits/Multi-Agent-Dynamic-Pricing-Swarm)** | LangChain, Groq (`openai/gpt-oss-120b`), Pydantic | Autonomous trading desk: Reconciles rival competitor pricing, price elasticity (%ΔQ = ε × %ΔP), statutory MRP ceilings, and margin floors to output executive P&L decision scorecards. |
 | **[Perishable Markdown & Yield Optimizer](https://github.com/findsamirks-commits/Perishable-Markdown-Optimizer)** | LangChain, Groq (`openai/gpt-oss-120b`), Pydantic | Autonomous commercial yield management: Continuously evaluates batch hours-to-expiry against cost salvage thresholds, dynamically triggering aggressive clearance (<24h), promotional markdowns (24-48h), and base price holding (>48h) to eliminate shrinkage. |
 | **[Autonomous Inventory Optimizer](https://github.com/findsamirks-commits/Agentic-Inventory-Optimizer)** | LangGraph, Pydantic, Python | Closed-loop replenishment state machine tracking sales velocity, Days of Cover (DoC), vendor MOQs, and lead times to dynamically draft validated JSON Purchase Orders. |
@@ -73,7 +73,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 * **Time Series & Predictive Modeling:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss ($P_{10}/P_{50}/P_{90}$), PyTorch Forecasting, XGBoost, Random Forest, Scikit-Learn
 * **Information Retrieval & Vector Search:** FAISS (Sub-millisecond Vector Similarity), ChromaDB, Retrieval-Augmented Generation (RAG), Semantic Embedding Search
 * **Data Engineering & Analytics:** Python, SQL, SQLAlchemy, MySQL, SQLite, Pandas, NumPy, Data Pipeline Optimization, Power BI
-* **API & Systems Design:** FastAPI, Flask, RESTful Microservices, Automated Workflow Governance & P&L Guardrails
+* **API & Systems Design:** FastAPI, Streamlit, Flask, RESTful Microservices, Automated Workflow Governance & P&L Guardrails
 
 ---
 
