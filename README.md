@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Samir Sandhwar
 
-**Senior Retail Professional & Merchandising Head | Agentic AI & Data Science Engineer| Business Head**  
+**Senior Retail Professional & Merchandising Head | Agentic AI & Data Science Engineer | Business Head**  
 *Bridging 24+ years of high-volume retail P&L leadership with production autonomous multi-agent AI architectures.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-samirsandhwar-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/samirsandhwar)
@@ -76,7 +76,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 * **Time Series & Predictive Modeling:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss ($P_{10}/P_{50}/P_{90}$), PyTorch Forecasting, XGBoost, Random Forest, Scikit-Learn
 * **Information Retrieval & Vector Search:** FAISS (Sub-millisecond Vector Similarity), ChromaDB, Retrieval-Augmented Generation (RAG), Semantic Embedding Search
 * **Data Engineering & Analytics:** Python, SQL, SQLAlchemy, MySQL, SQLite, Pandas, NumPy, Data Pipeline Optimization, Power BI
-* **API & Systems Design:** FastAPI, Streamlit, Flask, RESTful Microservices, Automated Workflow Governance & P&L Guardrails
+* **API & Systems Design:** Model Context Protocol (FastMCP / stdio JSON-RPC 2.0), FastAPI, Streamlit, Flask, RESTful Microservices, Automated Workflow Governance & P&L Guardrails
 
 ---
 
