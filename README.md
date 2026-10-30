@@ -8,6 +8,7 @@
 [![GitHub List](https://img.shields.io/badge/Curated_List-Retail_AI_Architectures-blue?style=flat&logo=github)](https://github.com/stars/findsamirks-commits/lists/retail-ai-architectures)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-findsamirks-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/findsamirks)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demos-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://share.streamlit.io)
+[![Render](https://img.shields.io/badge/Render-Live%20APIs-46E3B7?style=flat&logo=render&logoColor=black)](https://a2a-vendor-negotiation-arena.onrender.com)
 
 ---
 
@@ -30,7 +31,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 
 | System | Core Architecture & Stack | Business & Technical Impact |
 | :--- | :--- | :--- |
-| **[Autonomous A2A Vendor Negotiation Arena](https://github.com/findsamirks-commits/A2A-Vendor-Negotiation-Arena)** | Streamlit, FastAPI, LangGraph, Groq (`openai/gpt-oss-120b`) | Autonomous bilateral procurement bargaining state machine between a Retail Buyer (Milkbasket) and FMCG Supplier with multi-parameter trade-offs (price, volume, SLA) converging within a 6-turn limit. Features an interactive Streamlit arena UI for live simulation. |
+| **[Autonomous A2A Vendor Negotiation Arena](https://github.com/findsamirks-commits/A2A-Vendor-Negotiation-Arena)** | Streamlit, FastAPI, LangGraph, Groq (`openai/gpt-oss-120b`), Render | Autonomous bilateral procurement bargaining state machine between a Retail Buyer (Milkbasket) and FMCG Supplier with multi-parameter trade-offs (price, volume, SLA) converging within a 6-turn limit. Deployed on **Render** (FastAPI backend) with an interactive Streamlit arena UI. |
 | **[Multi-Agent Dynamic Pricing Swarm](https://github.com/findsamirks-commits/Multi-Agent-Dynamic-Pricing-Swarm)** | LangChain, Groq (`openai/gpt-oss-120b`), Pydantic | Autonomous trading desk: Reconciles rival competitor pricing, price elasticity (%ΔQ = ε × %ΔP), statutory MRP ceilings, and margin floors to output executive P&L decision scorecards. |
 | **[Perishable Markdown & Yield Optimizer](https://github.com/findsamirks-commits/Perishable-Markdown-Optimizer)** | LangChain, Groq (`openai/gpt-oss-120b`), Pydantic | Autonomous commercial yield management: Continuously evaluates batch hours-to-expiry against cost salvage thresholds, dynamically triggering aggressive clearance (<24h), promotional markdowns (24-48h), and base price holding (>48h) to eliminate shrinkage. |
 | **[Autonomous Inventory Optimizer](https://github.com/findsamirks-commits/Agentic-Inventory-Optimizer)** | LangGraph, Pydantic, Python | Closed-loop replenishment state machine tracking sales velocity, Days of Cover (DoC), vendor MOQs, and lead times to dynamically draft validated JSON Purchase Orders. |
@@ -84,4 +85,5 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 * **Email:** [findsamirks@gmail.com](mailto:findsamirks@gmail.com)
 * **Hugging Face Hub:** [huggingface.co/findsamirks](https://huggingface.co/findsamirks) (Model weights & inference checkpoints)
 * **Streamlit Demos:** [Streamlit Community Cloud](https://share.streamlit.io) (Interactive microservices & forecasting apps)
+* **Render Live Microservices:** [a2a-vendor-negotiation-arena.onrender.com](https://a2a-vendor-negotiation-arena.onrender.com) (Production FastAPI & LangGraph backend)
 * **Curated List:** [Retail AI Architectures Portfolio](https://github.com/stars/findsamirks-commits/lists/retail-ai-architectures)
