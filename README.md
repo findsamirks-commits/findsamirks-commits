@@ -41,6 +41,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 | **[Multimodal SKU Classifier](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier)** | PyTorch, ResNet-18, Hugging Face Hub | Late-fusion neural architecture combining vision representations with text encoders (`nn.EmbeddingBag`) for automated catalog categorization. Model weights published on [Hugging Face](https://huggingface.co/findsamirks/Retail-Multimodal-Classifier). |
 | **[Shelf-Vision: Planogram & OOS Detection](https://github.com/findsamirks-commits/Shelf-Vision)** | Ultralytics YOLOv8, PyTorch, OpenCV, Streamlit | Computer vision audit pipeline auditing retail dark-store shelf photos; uses bipartite Hungarian spatial matching to detect empty Out-of-Stock (OOS) slots, misplaced facings, and brand Share-of-Shelf (SoS) %. Features an interactive Streamlit visual audit app. |
 | **[Last-Mile Delivery Batching Agent](https://github.com/findsamirks-commits/Last-Mile-Delivery-Batching-Agent)** | LangChain, NetworkX, Groq (gpt-oss-120b) | Ingests localized order spikes and utilizes spatial graph logic to autonomously cluster quick-commerce deliveries, adhering to strict rider weight capacities (15kg) and time-to-deliver SLAs. |
+| **[Enterprise Supply Chain MCP Server](https://github.com/findsamirks-commits/Supply-Chain-MCP-Server)** | FastMCP, Python MCP SDK, SQLite3, JSON-RPC | Production Model Context Protocol (MCP) server providing standard JSON-RPC tools over stdio for LLM agents to securely inspect live dark-store inventory levels and vendor SLA lead times. |
 
 ---
 
@@ -70,7 +71,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 
 ### 🛠️ Technical Architecture & Stack
 
-* **Agentic AI & Orchestration:** LangGraph (Cyclic StateGraphs, Dynamic Routing, Conditional Edges), LangChain, Multi-Agent Swarms, Tool Calling & Function Execution, Structured Output Schemas (Pydantic), Groq (`openai/gpt-oss-120b`), Google Gemini
+* **Agentic AI & Orchestration:** Model Context Protocol (MCP / FastMCP Servers over stdio), LangGraph (Cyclic StateGraphs, Dynamic Routing, Conditional Edges), LangChain, Multi-Agent Swarms, Tool Calling & Function Execution, Structured Output Schemas (Pydantic), Groq (`openai/gpt-oss-120b`), Google Gemini
 * **Deep Learning, Vision & RecSys:** PyTorch, Ultralytics YOLOv8 (Anchor-Free Object Detection, mAP Optimization), Bipartite Hungarian Spatial Matching (`scipy.optimize.linear_sum_assignment`), Self-Attentive Sequential Recommendations (SASRec), Two-Tower Candidate Retrieval, Multimodal Late Fusion (ResNet-18 + Text Encoders), Transformers, Hugging Face Hub
 * **Time Series & Predictive Modeling:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss ($P_{10}/P_{50}/P_{90}$), PyTorch Forecasting, XGBoost, Random Forest, Scikit-Learn
 * **Information Retrieval & Vector Search:** FAISS (Sub-millisecond Vector Similarity), ChromaDB, Retrieval-Augmented Generation (RAG), Semantic Embedding Search
