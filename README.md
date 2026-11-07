@@ -36,10 +36,12 @@ flowchart TD
     classDef vision fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px;
     classDef recsys fill:#F5F3FF,stroke:#8B5CF6,stroke-width:2px;
     classDef pricing fill:#ECFDF5,stroke:#10B981,stroke-width:2px;
+    classDef causal fill:#FDF4FF,stroke:#C026D3,stroke-width:2px;
     classDef ops fill:#FFFBEB,stroke:#F59E0B,stroke-width:2px;
 
     SV["Shelf-Vision<br/><b>(CV Shelf & OOS Audit)</b>"]:::vision
     FG["Fresh-Grade<br/><b>(ViT Quality & Days-to-Spoil)</b>"]:::vision
+    UD["Uplift-DRL<br/><b>(DragonNet CATE Targeting)</b>"]:::causal
     BG["BasketGNN<br/><b>(Co-Purchase Graph RecSys)</b>"]:::recsys
     ENS["SASRec & Two-Tower<br/><b>(Sequential & Vector Ensemble)</b>"]:::recsys
     PMO["Perishable-Markdown-Optimizer<br/><b>(Yield & Price Elasticity)</b>"]:::pricing
@@ -48,6 +50,7 @@ flowchart TD
     SV -- "Real-Time OOS Mask<br/>(Zero-Ghost SKU Filter)" --> BG
     FG -- "FEFO Priority Signal<br/>(SELL_FIRST Boost)" --> BG
     FG -- "Decay Curves & Days<br/>(Markdown Ladder Rules)" --> PMO
+    UD -- "Persuadable User IDs<br/>(Targeted Promo Boost)" --> BG
     BG --> ENS
     PMO -- "Dynamic Clearance Prices" --> OPS
     ENS -- "Personalized Replenishment Additions" --> OPS
@@ -55,6 +58,7 @@ flowchart TD
 
 * **Zero Ghost-Inventory Recommendations:** [`Shelf-Vision`](https://github.com/findsamirks-commits/Shelf-Vision) identifies empty out-of-stock shelf facings and broadcasts an `OOS mask` to [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN), ensuring the recsys never recommends unavailable products to shoppers.
 * **FEFO Clearance Acceleration:** [`Fresh-Grade`](https://github.com/findsamirks-commits/Fresh-Grade) detects produce ripeness and shelf-life, feeding `SELL_FIRST` priority weights into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN) to stimulate sales velocity while simultaneously triggering dynamic yield markdowns in [`Perishable-Markdown-Optimizer`](https://github.com/findsamirks-commits/Perishable-Markdown-Optimizer).
+* **Deep Causal Promo Personalization:** [`Uplift-DRL`](https://github.com/findsamirks-commits/Uplift-DRL) estimates Conditional Average Treatment Effect (CATE) using DragonNet with targeted regularization, filtering out "Sure Things" and "Sleeping Dogs" to direct promotional coupon spend exclusively to "Persuadable" shoppers, feeding high-propensity customer IDs directly into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN).
 * **Multi-Modal RecSys Ensembling:** Graph neural networks ([`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN)) capture high-order co-purchase graph topology, ensembling with causal sequence models ([`SASRec`](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec)) and dense vector retrieval ([`Two-Tower`](https://github.com/findsamirks-commits/retail-twotower-recsys)) to drive measurable basket expansion and replenishment conversion.
 
 ---
