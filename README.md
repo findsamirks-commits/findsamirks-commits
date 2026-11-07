@@ -27,6 +27,38 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 
 ---
 
+### 🌐 Unified Autonomous Retail AI Mesh: Closed-Loop Operating Architecture
+
+Rather than isolated point solutions, my flagship neural networks and multi-agent systems interconnect into an enterprise closed-loop quick-commerce intelligence pipeline:
+
+```mermaid
+flowchart TD
+    classDef vision fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px;
+    classDef recsys fill:#F5F3FF,stroke:#8B5CF6,stroke-width:2px;
+    classDef pricing fill:#ECFDF5,stroke:#10B981,stroke-width:2px;
+    classDef ops fill:#FFFBEB,stroke:#F59E0B,stroke-width:2px;
+
+    SV["Shelf-Vision<br/><b>(CV Shelf & OOS Audit)</b>"]:::vision
+    FG["Fresh-Grade<br/><b>(ViT Quality & Days-to-Spoil)</b>"]:::vision
+    BG["BasketGNN<br/><b>(Co-Purchase Graph RecSys)</b>"]:::recsys
+    ENS["SASRec & Two-Tower<br/><b>(Sequential & Vector Ensemble)</b>"]:::recsys
+    PMO["Perishable-Markdown-Optimizer<br/><b>(Yield & Price Elasticity)</b>"]:::pricing
+    OPS["Dark Store Picking Totes<br/><b>& Last-Mile Batching</b>"]:::ops
+
+    SV -- "Real-Time OOS Mask<br/>(Zero-Ghost SKU Filter)" --> BG
+    FG -- "FEFO Priority Signal<br/>(SELL_FIRST Boost)" --> BG
+    FG -- "Decay Curves & Days<br/>(Markdown Ladder Rules)" --> PMO
+    BG --> ENS
+    PMO -- "Dynamic Clearance Prices" --> OPS
+    ENS -- "Personalized Replenishment Additions" --> OPS
+```
+
+* **Zero Ghost-Inventory Recommendations:** [`Shelf-Vision`](https://github.com/findsamirks-commits/Shelf-Vision) identifies empty out-of-stock shelf facings and broadcasts an `OOS mask` to [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN), ensuring the recsys never recommends unavailable products to shoppers.
+* **FEFO Clearance Acceleration:** [`Fresh-Grade`](https://github.com/findsamirks-commits/Fresh-Grade) detects produce ripeness and shelf-life, feeding `SELL_FIRST` priority weights into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN) to stimulate sales velocity while simultaneously triggering dynamic yield markdowns in [`Perishable-Markdown-Optimizer`](https://github.com/findsamirks-commits/Perishable-Markdown-Optimizer).
+* **Multi-Modal RecSys Ensembling:** Graph neural networks ([`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN)) capture high-order co-purchase graph topology, ensembling with causal sequence models ([`SASRec`](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec)) and dense vector retrieval ([`Two-Tower`](https://github.com/findsamirks-commits/retail-twotower-recsys)) to drive measurable basket expansion and replenishment conversion.
+
+---
+
 ### 🚀 Tier-1 Flagship Systems: Multi-Agent & Neural Architectures
 
 | System | Core Architecture & Stack | Business & Technical Impact |
@@ -41,6 +73,7 @@ My technical architectures are uniquely grounded in a **multidisciplinary founda
 | **[Multimodal SKU Classifier](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier)** | PyTorch, ResNet-18, Hugging Face Hub | Late-fusion neural architecture combining vision representations with text encoders (`nn.EmbeddingBag`) for automated catalog categorization. Model weights published on [Hugging Face](https://huggingface.co/findsamirks/Retail-Multimodal-Classifier). |
 | **[Shelf-Vision: Planogram & OOS Detection](https://github.com/findsamirks-commits/Shelf-Vision)** | Ultralytics YOLOv8, PyTorch, OpenCV, Streamlit | Computer vision audit pipeline auditing retail dark-store shelf photos; uses bipartite Hungarian spatial matching to detect empty Out-of-Stock (OOS) slots, misplaced facings, and brand Share-of-Shelf (SoS) %. Features an interactive Streamlit visual audit app. |
 | **[Fresh-Grade: ViT Produce Quality & Shelf-Life](https://github.com/findsamirks-commits/Fresh-Grade)** | PyTorch, Vision Transformer (ViT-B/16), timm, Streamlit | Multi-task Vision Transformer estimating 4-class perishable produce quality grade alongside continuous days-to-spoil regression (Softplus); chains directly into dynamic markdown price ladders and FEFO dark-store picking. Model weights on [Hugging Face](https://huggingface.co/findsamirks/Fresh-Grade-ViT). *(Live Interactive App on [Streamlit](https://fresh-grade.streamlit.app))* |
+| **[BasketGNN: Graph Co-Purchase Recommender](https://github.com/findsamirks-commits/BasketGNN)** | PyTorch Geometric, LightGCN / GNN, NetworkX, Streamlit | Graph neural network on user-item and SKU co-purchase bipartite graphs; dynamically ingests `Shelf-Vision` out-of-stock (OOS) masks and `Fresh-Grade` FEFO perishable priority signals to generate inventory-aware next-basket cross-sell recommendations. |
 | **[Last-Mile Delivery Batching Agent](https://github.com/findsamirks-commits/Last-Mile-Delivery-Batching-Agent)** | LangChain, NetworkX, Groq (gpt-oss-120b) | Ingests localized order spikes and utilizes spatial graph logic to autonomously cluster quick-commerce deliveries, adhering to strict rider weight capacities (15kg) and time-to-deliver SLAs. |
 | **[Enterprise Supply Chain MCP Server](https://github.com/findsamirks-commits/Supply-Chain-MCP-Server)** | FastMCP, Python MCP SDK, SQLite3, JSON-RPC | Production Model Context Protocol (MCP) server providing standard JSON-RPC tools over stdio for LLM agents to securely inspect live dark-store inventory levels and vendor SLA lead times. |
 | **[Agentic REST API Gateway](https://github.com/findsamirks-commits/Agentic-REST-API-Gateway)** | FastAPI, Streamlit, LangChain, Groq (`openai/gpt-oss-120b`) | Enterprise AI API gateway wrapping an autonomous Voice of Customer (VoC) defect triage agent; classifies delivery grievances (Temperature, Packaging, Spoilage), assigns severity 1-5, and routes tickets to Dark Store Ops or Supply Chain. Features an interactive Streamlit console. |
