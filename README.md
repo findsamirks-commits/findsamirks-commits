@@ -59,6 +59,21 @@ flowchart TD
 
 ---
 
+### 🧠 Deep Learning Paradigms Mastered
+
+[![CNN Object Detection](https://img.shields.io/badge/CNN_Detection-YOLOv8-00599C?style=flat&logo=opencv&logoColor=white)](https://github.com/findsamirks-commits/Shelf-Vision)
+[![ViT Multi-Task](https://img.shields.io/badge/ViT_Multi--Task-Classification%2BRegression-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://github.com/findsamirks-commits/Fresh-Grade)
+[![Multimodal Fusion](https://img.shields.io/badge/Multimodal_Fusion-ResNet%2BText-7952B3?style=flat&logo=pytorch&logoColor=white)](https://github.com/findsamirks-commits/Multimodal-SKU-Classifier)
+[![Causal Transformer](https://img.shields.io/badge/Causal_Transformer-SASRec-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec)
+[![Dual-Encoder](https://img.shields.io/badge/Dual--Encoder-Two--Tower%2BFAISS-336791?style=flat&logo=meta&logoColor=white)](https://github.com/findsamirks-commits/retail-twotower-recsys)
+[![Graph Neural Network](https://img.shields.io/badge/GNN-LightGCN-FF6600?style=flat&logo=pytorch&logoColor=white)](https://github.com/findsamirks-commits/BasketGNN)
+[![Temporal Fusion](https://img.shields.io/badge/Temporal_Fusion-TFT%2BQuantile-13B9FD?style=flat&logo=pytorchlightning&logoColor=white)](https://github.com/findsamirks-commits/retail-demand-tft)
+[![NLP Fine-Tuning](https://img.shields.io/badge/NLP_Fine--Tune-DistilBERT-FFCD00?style=flat&logo=huggingface&logoColor=black)](https://github.com/findsamirks-commits/retail-catalog-classifier)
+
+> **Eight distinct neural architectures shipped to production-grade retail use cases** — from dense anchor-free object detection on dark-store shelves (`YOLOv8`), through multi-task Vision Transformer heads for perishable grading (`ViT-B/16`), to graph-propagation collaborative filtering on co-purchase bipartite adjacencies (`LightGCN`) and probabilistic quantile forecasting on multi-horizon demand (`TFT`). Each paradigm is matched to the retail problem whose inductive bias it fits best.
+
+---
+
 ### 🚀 Tier-1 Flagship Systems: Multi-Agent & Neural Architectures
 
 | System | Core Architecture & Stack | Business & Technical Impact |
