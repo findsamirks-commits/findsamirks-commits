@@ -105,15 +105,18 @@ flowchart TD
 
 <details>
 <summary><strong>🔍 Deep Learning, Recommenders & Predictive Forecasting (Click to Expand)</strong></summary>
+<br>
 
 * **[Two-Tower Neural Recommendation Engine](https://github.com/findsamirks-commits/retail-twotower-recsys):** Custom dual-encoder neural network in PyTorch with in-batch negative sampling and sub-millisecond FAISS vector indexing for high-throughput candidate retrieval. *(Live Interactive App on Streamlit)*
 * **[Demand Sensing & Probabilistic Forecasting (TFT)](https://github.com/findsamirks-commits/retail-demand-tft):** Temporal Fusion Transformer architecture using PyTorch Forecasting with Quantile Loss ($P_{10}/P_{50}/P_{90}$) and dynamic safety-stock optimization dashboards. *(Live Interactive App on Streamlit)*
 * **[Retail Document Intelligence (RAG)](https://github.com/findsamirks-commits/Retail-Document-Intelligence-RAG):** Strict enterprise Retrieval-Augmented Generation system using LangChain, ChromaDB, and Gemini 2.5 Flash for grounded citation of standard operating procedures (SOPs) and retail policy documentation. *(Live Interactive App on Streamlit)*
 * **[Autonomous Multi-Agent Procurement Squad](https://github.com/findsamirks-commits/Multi-Agent-Supply-Chain-Orchestration):** Decentralized LangGraph architecture combining real-time web scraping, inventory thresholds, and data-backed vendor negotiation drafting. *(Live Interactive App on Streamlit)*
+
 </details>
 
 <details>
 <summary><strong>⚙️ Commercial APIs, Classical ML Benchmarks & Utilities (Click to Expand)</strong></summary>
+<br>
 
 * **[Competitor Pricing Intelligence Agent](https://github.com/findsamirks-commits/competitor-pricing-agent):** Web scraping and SKU matching agent for tracking rival retailer pricing and identifying margin-expansion opportunities. *(Live Interactive App on Streamlit)*
 * **[Automated Catalog Classifier](https://github.com/findsamirks-commits/retail-catalog-classifier):** DistilBERT NLP model fine-tuned for high-accuracy vendor item taxonomy classification. Model weights on [Hugging Face](https://huggingface.co/findsamirks/retail-catalog-classifier) *(Live Interactive App on Streamlit)*.
@@ -121,6 +124,7 @@ flowchart TD
 * **[Retail ML vs. DL Architectures Benchmark](https://github.com/findsamirks-commits/Retail-ML-vs-DL-Architectures):** Head-to-head empirical study contrasting tabular gradient boosting (XGBoost) against deep tensor representations.
 * **[Customer Segmentation API](https://github.com/findsamirks-commits/retail-customer-segmentation-api):** Unsupervised RFM (Recency, Frequency, Monetary) clustering microservice generating actionable customer cohorts.
 * **[Review Sentiment & Triage API](https://github.com/findsamirks-commits/retail-review-sentiment-classifier-api):** NLP classification microservice for operational incident routing and customer sentiment analytics.
+
 </details>
 
 ---
