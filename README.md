@@ -37,28 +37,36 @@ flowchart TD
     classDef recsys fill:#F5F3FF,stroke:#8B5CF6,stroke-width:2px;
     classDef pricing fill:#ECFDF5,stroke:#10B981,stroke-width:2px;
     classDef causal fill:#FDF4FF,stroke:#C026D3,stroke-width:2px;
+    classDef policy fill:#EEF2FF,stroke:#4F46E5,stroke-width:2px;
     classDef ops fill:#FFFBEB,stroke:#F59E0B,stroke-width:2px;
 
     SV["Shelf-Vision<br/><b>(CV Shelf & OOS Audit)</b>"]:::vision
     FG["Fresh-Grade<br/><b>(ViT Quality & Days-to-Spoil)</b>"]:::vision
     UD["Uplift-DRL<br/><b>(DragonNet CATE Targeting)</b>"]:::causal
+    DRL["Deep-RL-Replenish<br/><b>(PPO Multi-Hub Policy)</b>"]:::policy
     BG["BasketGNN<br/><b>(Co-Purchase Graph RecSys)</b>"]:::recsys
     ENS["SASRec & Two-Tower<br/><b>(Sequential & Vector Ensemble)</b>"]:::recsys
     PMO["Perishable-Markdown-Optimizer<br/><b>(Yield & Price Elasticity)</b>"]:::pricing
+    IO["Agentic-Inventory-Optimizer<br/><b>(LangGraph PO Validator)</b>"]:::ops
     OPS["Dark Store Picking Totes<br/><b>& Last-Mile Batching</b>"]:::ops
 
     SV -- "Real-Time OOS Mask<br/>(Zero-Ghost SKU Filter)" --> BG
     FG -- "FEFO Priority Signal<br/>(SELL_FIRST Boost)" --> BG
     FG -- "Decay Curves & Days<br/>(Markdown Ladder Rules)" --> PMO
+    FG -- "Days-to-Expire Signal<br/>(FEFO Downweight)" --> DRL
     UD -- "Persuadable User IDs<br/>(Targeted Promo Boost)" --> BG
+    BG -- "Next-Week Demand Lift" --> DRL
+    DRL -- "Learned Reorder Quantities<br/>(Draft PO)" --> IO
     BG --> ENS
     PMO -- "Dynamic Clearance Prices" --> OPS
     ENS -- "Personalized Replenishment Additions" --> OPS
+    IO -- "Validated Vendor POs" --> OPS
 ```
 
 * **Zero Ghost-Inventory Recommendations:** [`Shelf-Vision`](https://github.com/findsamirks-commits/Shelf-Vision) identifies empty out-of-stock shelf facings and broadcasts an `OOS mask` to [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN), ensuring the recsys never recommends unavailable products to shoppers.
 * **FEFO Clearance Acceleration:** [`Fresh-Grade`](https://github.com/findsamirks-commits/Fresh-Grade) detects produce ripeness and shelf-life, feeding `SELL_FIRST` priority weights into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN) to stimulate sales velocity while simultaneously triggering dynamic yield markdowns in [`Perishable-Markdown-Optimizer`](https://github.com/findsamirks-commits/Perishable-Markdown-Optimizer).
 * **Deep Causal Promo Personalization:** [`Uplift-DRL`](https://github.com/findsamirks-commits/Uplift-DRL) estimates Conditional Average Treatment Effect (CATE) using DragonNet with targeted regularization, filtering out "Sure Things" and "Sleeping Dogs" to direct promotional coupon spend exclusively to "Persuadable" shoppers, feeding high-propensity customer IDs directly into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN).
+* **Learned Replenishment Policy:** [`Deep-RL-Replenish`](https://github.com/findsamirks-commits/Deep-RL-Replenish) trains a PPO policy on a custom Gymnasium environment modeling multi-SKU × multi-hub inventory dynamics with stochastic demand, lead times, and four competing cost pressures (holding, stockout, ordering, spoilage); learned reorder quantities flow through a FEFO bridge that enforces Fresh-Grade shelf-life downweights, vendor MOQs, and case-pack rounding before handoff to [`Agentic-Inventory-Optimizer`](https://github.com/findsamirks-commits/Agentic-Inventory-Optimizer) for validated PO dispatch — demonstrating the **learned-policy vs rule-based-agent** architectural choice on the same business problem.
 * **Multi-Modal RecSys Ensembling:** Graph neural networks ([`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN)) capture high-order co-purchase graph topology, ensembling with causal sequence models ([`SASRec`](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec)) and dense vector retrieval ([`Two-Tower`](https://github.com/findsamirks-commits/retail-twotower-recsys)) to drive measurable basket expansion and replenishment conversion.
 
 ---
@@ -74,8 +82,9 @@ flowchart TD
 [![Temporal Fusion](https://img.shields.io/badge/Temporal_Fusion-TFT%2BQuantile-13B9FD?style=flat&logo=pytorchlightning&logoColor=white)](https://github.com/findsamirks-commits/retail-demand-tft)
 [![NLP Fine-Tuning](https://img.shields.io/badge/NLP_Fine--Tune-DistilBERT-FFCD00?style=flat&logo=huggingface&logoColor=black)](https://github.com/findsamirks-commits/retail-catalog-classifier)
 [![Causal CATE](https://img.shields.io/badge/Causal_CATE-DragonNet-9146FF?style=flat&logo=pytorch&logoColor=white)](https://github.com/findsamirks-commits/Uplift-DRL)
+[![Deep RL](https://img.shields.io/badge/Deep_RL-PPO%2FDQN-F7931E?style=flat&logo=openai&logoColor=white)](https://github.com/findsamirks-commits/Deep-RL-Replenish)
 
-> **Nine distinct neural architectures shipped to production-grade retail use cases** — from dense anchor-free object detection on dark-store shelves (`YOLOv8`), through multi-task Vision Transformer heads for perishable grading (`ViT-B/16`), graph-propagation collaborative filtering on co-purchase bipartite adjacencies (`LightGCN`), to deep causal targeted regularization for promo allocation (`DragonNet`). Each paradigm is matched to the retail problem whose inductive bias it fits best.
+> **Ten distinct neural architectures shipped to production-grade retail use cases** — from dense anchor-free object detection on dark-store shelves (`YOLOv8`), through multi-task Vision Transformer heads for perishable grading (`ViT-B/16`) and graph-propagation collaborative filtering on co-purchase bipartite adjacencies (`LightGCN`), deep causal targeted regularization for promo allocation (`DragonNet`), to learned-policy reinforcement learning for multi-hub inventory replenishment (`PPO`). Each paradigm is matched to the retail problem whose inductive bias it fits best.
 
 ---
 
@@ -98,6 +107,7 @@ flowchart TD
 | **[Last-Mile Delivery Batching Agent](https://github.com/findsamirks-commits/Last-Mile-Delivery-Batching-Agent)** | LangChain, NetworkX, Groq (gpt-oss-120b) | Ingests localized order spikes and utilizes spatial graph logic to autonomously cluster quick-commerce deliveries, adhering to strict rider weight capacities (15kg) and time-to-deliver SLAs. |
 | **[Enterprise Supply Chain MCP Server](https://github.com/findsamirks-commits/Supply-Chain-MCP-Server)** | FastMCP, Python MCP SDK, SQLite3, JSON-RPC | Production Model Context Protocol (MCP) server providing standard JSON-RPC tools over stdio for LLM agents to securely inspect live dark-store inventory levels and vendor SLA lead times. |
 | **[Agentic REST API Gateway](https://github.com/findsamirks-commits/Agentic-REST-API-Gateway)** | FastAPI, Streamlit, LangChain, Groq (`openai/gpt-oss-120b`) | Enterprise AI API gateway wrapping an autonomous Voice of Customer (VoC) defect triage agent; classifies delivery grievances (Temperature, Packaging, Spoilage), assigns severity 1-5, and routes tickets to Dark Store Ops or Supply Chain. Features an interactive Streamlit console. |
+| **[Deep-RL-Replenish: Learned Multi-Hub Replenishment Policy](https://github.com/findsamirks-commits/Deep-RL-Replenish)** | PyTorch, Gymnasium, Stable-Baselines3 (PPO/DQN), Streamlit | Custom Gymnasium environment modeling multi-SKU × multi-hub inventory with stochastic demand, lead times, and four competing cost pressures (holding, stockout, ordering, spoilage); PPO agent learns **context-adaptive (s, S)** reorder behavior that targets 10–30% lower total cost than textbook base-stock at equivalent or higher service level. Consumes Fresh-Grade shelf-life signals via FEFO bridge; emits validated reorder quantities to [`Agentic-Inventory-Optimizer`](https://github.com/findsamirks-commits/Agentic-Inventory-Optimizer) for PO dispatch. Direct **learned-policy vs. LLM-agent** comparison to its sibling rule-based system. *(Live Interactive App on [Streamlit](https://deep-rl-replenish.streamlit.app))* |
 
 ---
 
@@ -132,6 +142,7 @@ flowchart TD
 ### 🛠️ Technical Architecture & Stack
 
 * **Agentic AI & Swarm Orchestration:** Model Context Protocol (FastMCP Servers over stdio JSON-RPC 2.0), LangGraph (Cyclic StateGraphs, Dynamic Routing, Conditional Edges), LangChain, Multi-Agent Swarms, Tool Calling & Structured Outputs (Pydantic v2), Groq (`openai/gpt-oss-120b`), Google Gemini
+* **Reinforcement Learning & Decision Policies:** Deep Reinforcement Learning (PPO, DQN), Gymnasium Custom Multi-Hub Environments, Markov Decision Processes (MDP), Generalized Advantage Estimation (GAE), Stochastic Demand & Lead-Time Simulation, Adaptive (s, S) Reorder Policies, Holding vs. Stockout Pareto Frontier Optimization
 * **Causal Machine Learning & Uplift Modeling:** Conditional Average Treatment Effect (CATE / ITE), DragonNet (Targeted Regularization & TMLE Clever Covariates), TARNet, Meta-Learners (S-Learner, T-Learner), Qini Curve & Qini Coefficient, AUUC, Uplift Decile Diagnostics, Off-Policy Policy Value (IPW / Horvitz-Thompson), Promo Budget P&L Guardrails
 * **Deep Learning, Computer Vision & RecSys:** Vision Transformers (ViT-B/16 Multi-Task Heads & Attention Rollout Heatmaps), PyTorch, Ultralytics YOLOv8 (Anchor-Free Object Detection), Graph Neural Networks (LightGCN on Co-Purchase Bipartite Graphs with Sparse Tensors), Causal Self-Attentive Recommenders (SASRec), Two-Tower Dual Encoders, Multimodal Late Fusion (ResNet-18 + `nn.EmbeddingBag`), Bipartite Hungarian Spatial Matching (`scipy.optimize.linear_sum_assignment`), Hugging Face Hub & `timm`
 * **Time Series, Forecasting & NLP:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss ($P_{10}/P_{50}/P_{90}$), PyTorch Forecasting, DistilBERT NLP Fine-Tuning, Hugging Face Transformers, Gradient Boosting (XGBoost), Scikit-Learn
