@@ -127,12 +127,13 @@ flowchart TD
 
 ### 🛠️ Technical Architecture & Stack
 
-* **Agentic AI & Orchestration:** Model Context Protocol (MCP / FastMCP Servers over stdio), LangGraph (Cyclic StateGraphs, Dynamic Routing, Conditional Edges), LangChain, Multi-Agent Swarms, Tool Calling & Function Execution, Structured Output Schemas (Pydantic), Groq (`openai/gpt-oss-120b`), Google Gemini
-* **Deep Learning, Vision & RecSys:** Vision Transformers (ViT-B/16 Multi-Task Heads), PyTorch, Ultralytics YOLOv8 (Anchor-Free Object Detection), Bipartite Hungarian Spatial Matching (`scipy.optimize.linear_sum_assignment`), Self-Attentive Sequential Recommendations (SASRec), Two-Tower Candidate Retrieval, Multimodal Late Fusion (ResNet-18 + Text Encoders), Transformers, Hugging Face Hub
-* **Time Series & Predictive Modeling:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss ($P_{10}/P_{50}/P_{90}$), PyTorch Forecasting, XGBoost, Random Forest, Scikit-Learn
-* **Information Retrieval & Vector Search:** FAISS (Sub-millisecond Vector Similarity), ChromaDB, Retrieval-Augmented Generation (RAG), Semantic Embedding Search
-* **Data Engineering & Analytics:** Python, SQL, SQLAlchemy, MySQL, SQLite, Pandas, NumPy, Data Pipeline Optimization, Power BI
-* **API & Systems Design:** Model Context Protocol (FastMCP / stdio JSON-RPC 2.0), FastAPI, Streamlit, Flask, RESTful Microservices, Automated Workflow Governance & P&L Guardrails
+* **Agentic AI & Swarm Orchestration:** Model Context Protocol (FastMCP Servers over stdio JSON-RPC 2.0), LangGraph (Cyclic StateGraphs, Dynamic Routing, Conditional Edges), LangChain, Multi-Agent Swarms, Tool Calling & Structured Outputs (Pydantic v2), Groq (`openai/gpt-oss-120b`), Google Gemini
+* **Causal Machine Learning & Uplift Modeling:** Conditional Average Treatment Effect (CATE / ITE), DragonNet (Targeted Regularization & TMLE Clever Covariates), TARNet, Meta-Learners (S-Learner, T-Learner), Qini Curve & Qini Coefficient, AUUC, Uplift Decile Diagnostics, Off-Policy Policy Value (IPW / Horvitz-Thompson), Promo Budget P&L Guardrails
+* **Deep Learning, Computer Vision & RecSys:** Vision Transformers (ViT-B/16 Multi-Task Heads & Attention Rollout Heatmaps), PyTorch, Ultralytics YOLOv8 (Anchor-Free Object Detection), Graph Neural Networks (LightGCN on Co-Purchase Bipartite Graphs with Sparse Tensors), Causal Self-Attentive Recommenders (SASRec), Two-Tower Dual Encoders, Multimodal Late Fusion (ResNet-18 + `nn.EmbeddingBag`), Bipartite Hungarian Spatial Matching (`scipy.optimize.linear_sum_assignment`), Hugging Face Hub & `timm`
+* **Time Series, Forecasting & NLP:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss ($P_{10}/P_{50}/P_{90}$), PyTorch Forecasting, DistilBERT NLP Fine-Tuning, Hugging Face Transformers, Gradient Boosting (XGBoost), Scikit-Learn
+* **Information Retrieval, Graphs & Vector Search:** FAISS (Sub-millisecond Dense Vector Indexing), ChromaDB, Retrieval-Augmented Generation (RAG), Semantic Vector Embeddings, NetworkX (Spatial Graph Clustering & Delivery Batching)
+* **Retail Operations & Commercial P&L Governance:** Price Elasticity Modeling ($\% \Delta Q = \varepsilon \times \% \Delta P$), FEFO (First-Expire-First-Out) Inventory Scheduling, Statutory MRP Ceilings & Margin Floors, Days of Cover (DoC) Replenishment State Machines, Dark Store Pick-Path Optimization
+* **Data Engineering & Production Systems:** Python (3.10+), SQL, SQLAlchemy, MySQL, SQLite, Pandas, NumPy, FastAPI, Streamlit, Flask, RESTful Microservices, Docker, Render PaaS Deployment, Power BI
 
 ---
 
