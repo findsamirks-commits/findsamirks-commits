@@ -5,6 +5,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-samirsandhwar-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/samirsandhwar)
 [![Email](https://img.shields.io/badge/Email-findsamirks%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:findsamirks@gmail.com)
+[![Paradigms](https://img.shields.io/badge/Deep%20Learning-11%20Paradigms%20Shipped-00C853?style=flat&logo=pytorch&logoColor=white)](#-deep-learning-paradigms-mastered)
 [![GitHub List](https://img.shields.io/badge/Curated_List-Retail_AI_Architectures-blue?style=flat&logo=github)](https://github.com/stars/findsamirks-commits/lists/retail-ai-architectures)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-findsamirks-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/findsamirks)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demos-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://share.streamlit.io)
@@ -40,6 +41,7 @@ flowchart TD
     classDef policy fill:#EEF2FF,stroke:#4F46E5,stroke-width:2px;
     classDef ops fill:#FFFBEB,stroke:#F59E0B,stroke-width:2px;
 
+    CLIP["CLIP-Catalog<br/><b>(Vision-Language Zero-Shot)</b>"]:::vision
     SV["Shelf-Vision<br/><b>(CV Shelf & OOS Audit)</b>"]:::vision
     FG["Fresh-Grade<br/><b>(ViT Quality & Days-to-Spoil)</b>"]:::vision
     UD["Uplift-DRL<br/><b>(DragonNet CATE Targeting)</b>"]:::causal
@@ -48,8 +50,11 @@ flowchart TD
     ENS["SASRec & Two-Tower<br/><b>(Sequential & Vector Ensemble)</b>"]:::recsys
     PMO["Perishable-Markdown-Optimizer<br/><b>(Yield & Price Elasticity)</b>"]:::pricing
     IO["Agentic-Inventory-Optimizer<br/><b>(LangGraph PO Validator)</b>"]:::ops
+    A2A["A2A-Vendor-Negotiation-Arena<br/><b>(Procurement Bargaining)</b>"]:::ops
     OPS["Dark Store Picking Totes<br/><b>& Last-Mile Batching</b>"]:::ops
 
+    CLIP -- "Instant Zero-Shot Taxonomy & Cold-Start" --> BG
+    CLIP -- "Visual SKU Embeddings" --> SV
     SV -- "Real-Time OOS Mask<br/>(Zero-Ghost SKU Filter)" --> BG
     FG -- "FEFO Priority Signal<br/>(SELL_FIRST Boost)" --> BG
     FG -- "Decay Curves & Days<br/>(Markdown Ladder Rules)" --> PMO
@@ -60,13 +65,16 @@ flowchart TD
     BG --> ENS
     PMO -- "Dynamic Clearance Prices" --> OPS
     ENS -- "Personalized Replenishment Additions" --> OPS
-    IO -- "Validated Vendor POs" --> OPS
+    IO -- "Validated Reorder Quantities" --> A2A
+    A2A -- "Agreed Price, MOQ & Delivery SLA" --> OPS
 ```
 
+* **Zero-Shot SKU Onboarding & Cold-Start Induction:** [`CLIP-Catalog`](https://github.com/findsamirks-commits/CLIP-Catalog) eliminates the 3–5 day manual labeling latency for new vendor items, synthesizing zero-shot taxonomy classifications with OpenCLIP (ViT-B/32) and filtering ambiguous items through a commercial `OnboardingBridge` (70% auto-tag / 40% human-review threshold), immediately cold-starting new SKU representations into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN) and [`Shelf-Vision`](https://github.com/findsamirks-commits/Shelf-Vision) without retraining latency.
 * **Zero Ghost-Inventory Recommendations:** [`Shelf-Vision`](https://github.com/findsamirks-commits/Shelf-Vision) identifies empty out-of-stock shelf facings and broadcasts an `OOS mask` to [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN), ensuring the recsys never recommends unavailable products to shoppers.
 * **FEFO Clearance Acceleration:** [`Fresh-Grade`](https://github.com/findsamirks-commits/Fresh-Grade) detects produce ripeness and shelf-life, feeding `SELL_FIRST` priority weights into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN) to stimulate sales velocity while simultaneously triggering dynamic yield markdowns in [`Perishable-Markdown-Optimizer`](https://github.com/findsamirks-commits/Perishable-Markdown-Optimizer).
 * **Deep Causal Promo Personalization:** [`Uplift-DRL`](https://github.com/findsamirks-commits/Uplift-DRL) estimates Conditional Average Treatment Effect (CATE) using DragonNet with targeted regularization, filtering out "Sure Things" and "Sleeping Dogs" to direct promotional coupon spend exclusively to "Persuadable" shoppers, feeding high-propensity customer IDs directly into [`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN).
 * **Learned Replenishment Policy:** [`Deep-RL-Replenish`](https://github.com/findsamirks-commits/Deep-RL-Replenish) trains a PPO policy on a custom Gymnasium environment modeling multi-SKU × multi-hub inventory dynamics with stochastic demand, lead times, and four competing cost pressures (holding, stockout, ordering, spoilage); learned reorder quantities flow through a FEFO bridge that enforces Fresh-Grade shelf-life downweights, vendor MOQs, and case-pack rounding before handoff to [`Agentic-Inventory-Optimizer`](https://github.com/findsamirks-commits/Agentic-Inventory-Optimizer) for validated PO dispatch — demonstrating the **learned-policy vs rule-based-agent** architectural choice on the same business problem.
+* **Autonomous Procurement Bargaining:** [`A2A-Vendor-Negotiation-Arena`](https://github.com/findsamirks-commits/A2A-Vendor-Negotiation-Arena) automates bilateral procurement bargaining between buyer and supplier agents, reconciling reorder quantities from [`Agentic-Inventory-Optimizer`](https://github.com/findsamirks-commits/Agentic-Inventory-Optimizer) with vendor cost and MOQ boundaries within a bounded 6-turn state machine deployed on **Render**.
 * **Multi-Modal RecSys Ensembling:** Graph neural networks ([`BasketGNN`](https://github.com/findsamirks-commits/BasketGNN)) capture high-order co-purchase graph topology, ensembling with causal sequence models ([`SASRec`](https://github.com/findsamirks-commits/Sequential-Recommendation-SASRec)) and dense vector retrieval ([`Two-Tower`](https://github.com/findsamirks-commits/retail-twotower-recsys)) to drive measurable basket expansion and replenishment conversion.
 
 ---
