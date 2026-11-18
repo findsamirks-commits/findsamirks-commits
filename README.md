@@ -1,30 +1,52 @@
 # 👋 Hi, I'm Samir Sandhwar
 
-**Senior Retail Professional & Merchandising Head | Agentic AI & Data Science Engineer | Business Head**  
-*Bridging 24+ years of high-volume retail P&L leadership with production autonomous multi-agent AI architectures.*
+**AI-Native Retail & E-Commerce Business Leader | Category Head @ Milkbasket (GM, Reliance Retail) | ₹3,000 Cr P&L & Turnaround Executive**  
+*Bridging 20+ years of full-stack retail P&L leadership (Sourcing, Supply Chain, Merchandising, Operations, Finance & Governance) with hands-on Cloud, Data, and Autonomous AI systems.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-samirsandhwar-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/samirsandhwar)
 [![Email](https://img.shields.io/badge/Email-findsamirks%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:findsamirks@gmail.com)
-[![Paradigms](https://img.shields.io/badge/Deep%20Learning-11%20Paradigms%20Shipped-00C853?style=flat&logo=pytorch&logoColor=white)](#-deep-learning-paradigms-mastered)
+[![Scale](https://img.shields.io/badge/P%26L_Scale-₹3,000_Cr_%7C_4X_Turnarounds-10B981?style=flat)](#-executive-track-record--turnaround-impact)
+[![Paradigms](https://img.shields.io/badge/Production_AI-11_Paradigms_Shipped-00C853?style=flat&logo=pytorch&logoColor=white)](#-deep-learning-paradigms-mastered)
 [![GitHub List](https://img.shields.io/badge/Curated_List-Retail_AI_Architectures-blue?style=flat&logo=github)](https://github.com/stars/findsamirks-commits/lists/retail-ai-architectures)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-findsamirks-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/findsamirks)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demos-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://share.streamlit.io)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demos-FF4B4B?style=flat&logo=streamlit&logoColor=white)](#-live-autonomous-retail-ai-systems-click-to-test)
 [![Render](https://img.shields.io/badge/Render-Live%20APIs-46E3B7?style=flat&logo=render&logoColor=black)](https://a2a-vendor-negotiation-arena.onrender.com)
 
 ---
 
-### 🧠 Executive Profile & Foundations
+### 🏆 Executive Track Record & Turnaround Impact
 
-I bring over **24 years of hands-on retail leadership** across E-commerce, Modern Trade, Category Management, and Merchandising Operations, paired with modern technical foundations in **Agentic AI, Recommender Systems, and Applied Machine Learning**. 
+Modern Indian retail boards increasingly recognize that the next-generation **CEO / Business Head / Chief Merchandising Officer** must command **both commercial P&L economics and hands-on AI/technology execution**. This GitHub repository is my **Executive AI Transformation Lab**—the working software layer behind 20+ years of real-world retail scale:
 
-My technical architectures are uniquely grounded in a **multidisciplinary foundation**:
-* **Autonomous AI & Global Commerce:** Executive Alumnus, **Indian Institute of Foreign Trade (IIFT)**, New Delhi & **IIT Madras Pravartak** (Professional Certificate in Agentic AI and Data Science).
-* **Financial & Economic Engineering:** **MBA (Finance)**, Indian Institute of Finance — grounding pricing agents in real-world gross margin thresholds, working capital velocity, and P&L governance.
-* **Governance & Legal Guardrails:** **LL.B. (Bachelor of Laws)**, Faculty of Law, University of Delhi — designing hard compliance checks for statutory Maximum Retail Price (MRP) ceilings and contractual vendor agreements.
-* **Quantitative First-Principles:** **B.Sc. (Physics)** — mathematical modeling, probability distributions, and price elasticity algorithms.
-* **Industry Credentials:** Certified across Artificial Intelligence, Cloud Infrastructure, and Data Engineering by **Google**, **Microsoft**, **IBM**, and **AWS**.
+| Mandate & Scale | Commercial & P&L Turnaround | Enterprise Tech, Cloud & Automation Delivered |
+| :--- | :--- | :--- |
+| **Milkbasket (Reliance Retail)**<br/>*Category & Merchandising Head — All Verticals (2024–Present)* | Scaled orders **3X (1 Lakh → 3 Lakh daily orders)**; turned **all loss-making hubs → 3 profitable hubs & counting**; expanded regional assortment **+30% (+75%+ in key markets)**; built signature **micro-festival playbook**. | Partnered with **Jio Platforms & RDIP** to build **GCS → BigQuery** automated competitor pricing alerts, integrated Reliance's **Central Promotion Engine (CPE)**, and automated **pricing, liquidation & vendor claims**. |
+| **Reliance Retail — Central Sourcing**<br/>*GM / DGM — Home Care & Regional Task Forces (2022–2024)* | Led **₹3,000 Cr annualized** Home Care sourcing across **10+ formats** (Smart Bazaar, JioMart, Milkbasket, 7-Eleven, Metro, Bismi); owned **₹1,000 Cr** enterprise relationships (Reckitt, Patanjali, Shubhkart); CEO-selected for **₹1,350 Cr+** penetration & recovery task forces (**UP ₹600 Cr+, AP/TG ₹500 Cr, Punjab ₹250 Cr**); **+25% YoY growth**, **+600 bps** regional TOT margin uplift, **+150 bps** top-tier Reckitt incentive. | Automated **Forecasting & Replenishment (F&R)**, data cleaning pipelines, and trade planning sheets—holding lean **27 Days of Cover (DoC)** with minimal manual input. |
+| **Future Group India**<br/>*Head of Sales, Merchandising & Supply Chain / Category Head (2007–2022)* | Led **₹3,000 Cr Easyday** (North & South), bringing loss-making North small formats to the verge of profitability; led **₹500 Cr Big Bazaar North** & turned **all E-Zone stores profitable**; led **₹150 Cr CD&E**. | Engineered **Automated Replenishment System (ARS)** and helped integrate **SAP, BIW & SQL** across Future Retail (2008–2012), achieving **21-day inventory (below credit period / negative working capital)**. |
+| **Global Sourcing & Capital Markets**<br/>*halcyon ASIA · GHCL · AgriWatch (2005–2007)* | Restructured China genset sourcing driving **5X company revenue growth**; authored Board/AGM financial models & Investor Relations decks. | Commodity & FOREX derivatives modeling (Reuters, Bloomberg, CBOT, CME, NYMEX, LME). |
 
-> **Core Value Proposition:** Transitioning retail operations from latency-plagued manual reporting into closed-loop autonomous AI systems that enforce margin guardrails, maximize sales velocity, and drive measurable GMV and inventory turnover improvements.
+**Multidisciplinary Foundations:**
+* **Autonomous AI & Global Commerce:** **IIT Madras Pravartak** (Professional Certificate in Agentic AI & Data Science) · Executive Alumnus, **Indian Institute of Foreign Trade (IIFT)**, New Delhi.
+* **Financial & Economic Engineering:** **MBA (Finance)**, Indian Institute of Finance — grounding autonomous pricing, TOT negotiation, and working capital velocity in P&L discipline.
+* **Governance & Legal Guardrails:** **LL.B. (Bachelor of Laws)**, Law Centre-II, Faculty of Law, University of Delhi — embedding statutory MRP ceilings, commercial contracts, and regulatory compliance directly into business logic.
+* **Quantitative First-Principles:** **B.Sc. Physics (Hons)**, A. N. College, Patna — mathematical modeling, probability distributions, and price elasticity optimization.
+* **Cloud, Data & Product Credentials:** Certified across AI, Cloud, Data & UX/UI by **Google**, **AWS**, **Microsoft**, **IBM**, Galgotias University (Data Science & Analytics), and Dice Academy (UX/UI Interaction Design).
+
+> **Core Executive Thesis:** Eliminate the translation gap between Boardroom P&L and Engineering. Encode gross margin floors, statutory MRP ceilings, FEFO shelf-life, MOQs, and negative working capital directly into autonomous AI systems that drive measurable EBITDA and inventory turnover.
+
+---
+
+### ⚡ Live Autonomous Retail AI Systems (Click to Test)
+
+| System | Paradigm | Business P&L Lever | Live Interactive App |
+| :--- | :--- | :--- | :--- |
+| **[Deep-RL-Replenish](https://github.com/findsamirks-commits/Deep-RL-Replenish)** | Deep RL (PPO / DQN) | Working capital & holding vs. stockout Pareto | [deep-rl-replenish.streamlit.app](https://deep-rl-replenish.streamlit.app) |
+| **[CLIP-Catalog](https://github.com/findsamirks-commits/CLIP-Catalog)** | Vision-Language (OpenCLIP + FAISS) | New-SKU onboarding speed (days → seconds) | [clip-catalog.streamlit.app](https://clip-catalog.streamlit.app) |
+| **[Uplift-DRL](https://github.com/findsamirks-commits/Uplift-DRL)** | Deep Causal CATE (DragonNet + TMLE) | Promo ROI & zero discount burn on Sure Things | [uplift-drl.streamlit.app](https://uplift-drl.streamlit.app) |
+| **[Shelf-Vision](https://github.com/findsamirks-commits/Shelf-Vision)** | CV Object Detection (YOLOv8) | OOS elimination & planogram Share-of-Shelf | [shelf-vision.streamlit.app](https://shelf-vision.streamlit.app) |
+| **[Fresh-Grade](https://github.com/findsamirks-commits/Fresh-Grade)** | Multi-Task ViT (ViT-B/16) | Perishable shrinkage & FEFO markdown ladders | [fresh-grade.streamlit.app](https://fresh-grade.streamlit.app) |
+| **[BasketGNN](https://github.com/findsamirks-commits/BasketGNN)** | Graph Neural Network (LightGCN) | Inventory-aware AOV & basket expansion | [basketgnn.streamlit.app](https://basketgnn.streamlit.app) |
+| **[A2A Vendor Arena](https://github.com/findsamirks-commits/A2A-Vendor-Negotiation-Arena)** | Multi-Agent Swarm (LangGraph + FastAPI) | Autonomous bilateral procurement bargaining | [a2a-vendor-negotiation-arena.onrender.com](https://a2a-vendor-negotiation-arena.onrender.com) |
 
 ---
 
@@ -158,12 +180,14 @@ flowchart TD
 * **Deep Learning, Computer Vision & RecSys:** Vision Transformers (ViT-B/16 Multi-Task Heads & Attention Rollout Heatmaps), PyTorch, Ultralytics YOLOv8 (Anchor-Free Object Detection), Graph Neural Networks (LightGCN on Co-Purchase Bipartite Graphs with Sparse Tensors), Causal Self-Attentive Recommenders (SASRec), Two-Tower Dual Encoders, Multimodal Late Fusion (ResNet-18 + `nn.EmbeddingBag`), Bipartite Hungarian Spatial Matching (`scipy.optimize.linear_sum_assignment`), Hugging Face Hub & `timm`
 * **Time Series, Forecasting & NLP:** Temporal Fusion Transformers (TFT), Probabilistic Quantile Loss ($P_{10}/P_{50}/P_{90}$), PyTorch Forecasting, DistilBERT NLP Fine-Tuning, Hugging Face Transformers, Gradient Boosting (XGBoost), Scikit-Learn
 * **Information Retrieval, Graphs & Vector Search:** FAISS (Sub-millisecond Dense Vector Indexing), ChromaDB, Retrieval-Augmented Generation (RAG), Semantic Vector Embeddings, NetworkX (Spatial Graph Clustering & Delivery Batching)
-* **Retail Operations & Commercial P&L Governance:** Price Elasticity Modeling ($\% \Delta Q = \varepsilon \times \% \Delta P$), FEFO (First-Expire-First-Out) Inventory Scheduling, Statutory MRP Ceilings & Margin Floors, Days of Cover (DoC) Replenishment State Machines, Dark Store Pick-Path Optimization
-* **Data Engineering & Production Systems:** Python (3.10+), SQL, SQLAlchemy, MySQL, SQLite, Pandas, NumPy, FastAPI, Streamlit, Flask, RESTful Microservices, Docker, Render PaaS Deployment, Power BI
+* **Retail Operations, P&L & Commercial Governance:** Multi-Format P&L Turnarounds (₹3,000 Cr+ Scale), Strategic Sourcing & TOT / JBP Negotiation, Automated Replenishment Systems (ARS / F&R), Negative Working Capital (21–27 Days of Cover), Pricing / Liquidation / Vendor Claim Automation, Price Elasticity Modeling ($\% \Delta Q = \varepsilon \times \% \Delta P$), FEFO (First-Expire-First-Out) Inventory Scheduling, Statutory MRP Ceilings & Margin Floors, Hyperlocal Assortment & Micro-Festival Merchandising
+* **Cloud, Enterprise Data & Production Systems:** Google Cloud Platform (GCS, BigQuery), Databricks, AWS (Bedrock, SageMaker), Enterprise Data Integration (RDIP, Central Promotion Engine, SAP, BIW), Python (3.10+), SQL, PostgreSQL, SQLAlchemy, MySQL, SQLite, Pandas, NumPy, FastAPI, Streamlit, Flask, RESTful Microservices, Docker, Render PaaS Deployment, Power BI, Product & UX/UI Interaction Design
 
 ---
 
-### 📫 Connect & Collaborate
+### 📫 Connect & Executive Collaboration
+
+*Open to **CEO, Business Head, Chief Merchandising Officer (CMO), COO, and Board Advisory** opportunities across Quick-Commerce, E-Commerce, Omnichannel Retail, FMCG, Food/Perishables, and Retail-Tech.*
 
 * **LinkedIn:** [linkedin.com/in/samirsandhwar](https://www.linkedin.com/in/samirsandhwar)
 * **Email:** [findsamirks@gmail.com](mailto:findsamirks@gmail.com)
